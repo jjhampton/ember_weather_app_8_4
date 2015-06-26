@@ -17,4 +17,8 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+app.import('bower_components/skeleton/css/skeleton.css', { destDir: 'css' });
+
 module.exports = app.toTree();
+
+// API Key: b0dff0776677ed51eac9aac2b6a2f23f
