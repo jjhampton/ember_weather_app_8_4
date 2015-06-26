@@ -8,7 +8,6 @@ export default Ember.Route.extend({
  actions: {
    request: function() {
      console.log('hello');
-     this.transitionTo()
    }
  },
 
