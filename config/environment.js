@@ -16,6 +16,16 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    contentSecurityPolicy: {
+      'default-src': "'self'",
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' api.forecast.io",
+      'font-src': "'self' fonts.gstatic.com",
+      'connect-src': "'self' api.forecast.io",
+      'img-src': "'self' api.forecast.io",
+      'style-src': "'self' api.forecast.io",
+      'media-src': "'self' api.forecast.io"
     }
   };
 
