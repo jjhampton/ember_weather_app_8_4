@@ -2,9 +2,7 @@
 
 <h2 class="request-heading">Request a weather forecast:</h2>
 
-<button class="request-button-current">Current Weather</button>
+<button class="request-button-current" {{action 'request' on='click'}}>Current Weather</button>
 <button class="request-button-24hour">24 Hour Forecast</button>
 <button class="request-button-48hour">48 Hour Forecast</button>
 <button class="request-button-7day">7-Day Forecast</button>
-
-{{outlet}}

@@ -5,6 +5,12 @@ export default Ember.Route.extend({
    return this.getLocation();
  },
 
+ actions: {
+   request: function() {
+     console.log('hello');
+   }
+ },
+
   getLocation: function() {
     if ('geolocation' in navigator) {
       return new Ember.RSVP.Promise(function(resolve) {
