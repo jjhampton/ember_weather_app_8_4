@@ -1,0 +1,13 @@
+{{user-location model=model}}
+
+<h2 class="request-heading">Request a weather forecast:</h2>
+
+{{#link-to 'weather'}}
+  <button class="request-button-current" {{action 'request' on='click'}}>
+    Current Weather
+  </button>
+{{/link-to}}
+
+<button class="request-button-24hour">24 Hour Forecast</button>
+<button class="request-button-48hour">48 Hour Forecast</button>
+<button class="request-button-7day">7-Day Forecast</button>
