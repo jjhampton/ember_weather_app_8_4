@@ -2,6 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function() {
+   return this.getLocation();
+ },
+
+  getLocation: function() {
     if ('geolocation' in navigator) {
       return new Ember.RSVP.Promise(function(resolve) {
         var userLocation = {};
